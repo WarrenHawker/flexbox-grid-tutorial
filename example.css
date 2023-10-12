@@ -1,0 +1,68 @@
+/* default stylings */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+img,
+iframe {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  max-width: 500px;
+  margin: 1em auto;
+}
+
+header {
+  background-color: aqua;
+  min-height: 100px;
+  padding: 2em;
+}
+
+main {
+  background-color: pink;
+  padding: 2em;
+}
+
+footer {
+  background-color: aquamarine;
+  min-height: 100px;
+  padding: 2em;
+}
+
+/* ------------------------------- */
+/* flexbox styling */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 100px;
+}
+
+header,
+footer {
+  flex-grow: 0;
+  flex-shrink: 1;
+}

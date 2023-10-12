@@ -1,0 +1,80 @@
+/* default stylings */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 2em;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+section {
+  border: 2px solid black;
+  margin-bottom: 2em;
+  padding: 0.5em;
+  width: 100%;
+}
+
+.box {
+  border: 1px dashed blue;
+  text-align: center;
+}
+
+.box-small {
+  height: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.box-large {
+  height: 200px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* --------------------------------- */
+/* flexbox stylings */
+
+.flexbox-container {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* flex-direction: column; */
+}
+
+/* .box {
+  flex-basis: 100px;
+  flex-grow: 2;
+  flex-shrink: 0;
+}
+
+#box-1 {
+  flex-shrink: 2;
+  flex-grow: 0;
+  align-self: center;
+}
+
+.flexbox-container h2 {
+  width: 100%;
+} */
+
+/* --------------------------------- */
+/* grid stylings */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+}
+
+.grid-container h2 {
+  grid-column: 1 / -1;
+}
